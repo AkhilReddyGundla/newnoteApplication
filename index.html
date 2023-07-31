@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upper">
+            <button class="input-btn">Take a note...</button>
+        </div>
+        <div class="popup">
+            <div class="card-top">
+                <div class="pin-btn">
+                    <button class="btn" id="pin">PIN</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <input type="text" placeholder="Title" class="user-input" id="title">
+                <input type="text" placeholder="Tagline" class="user-input" id="tagline">
+                <textarea placeholder="Description" class="user-input" cols="30" rows="10" id="description"></textarea>
+            </div>
+            <div class="card-foot">
+                <button class="btn close">Close</button>
+                <button class="btn save">Save</button>
+            </div>
+        </div>
+        <div class="pagination">
+            <div class="pin-banner">Your Pinned Notes</div>
+            <div class="pinnedNotes">
+                <!-- Placeholder for pinned notes -->
+            </div>
+            <div class="unpin-banner">Your Unpinned Notes</div>
+            <div class="unPinnedNotes">
+                <!-- Placeholder for unpinned notes -->
+            </div>
+        </div>
+    </div>
+    <div class="notesPopup">
+        <div class="notes-top">
+            <div class="date"></div>
+            <div class="pin-btn">
+                <button class="btn" id="pinIt">PIN</button>
+            </div>
+        </div>
+        <div class="newCard-body"></div>
+        <div class="card-foot">
+            <button class="btn" id="closePopup">Close</button>
+            <button class="btn" id="savePopup">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

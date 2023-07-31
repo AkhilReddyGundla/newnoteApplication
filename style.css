@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.input-btn {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5rem 5rem 0rem 5rem;
+    justify-content: center;
+    width: 30%;
+    align-items: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-btn:hover {
+    transition: all;
+    transform: translateY(-1px);
+}
+.popup,.notesPopup{
+    background-color: #ffff;
+    padding: 10px;
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.card-top,.notes-top{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: max-content;
+}
+.btn:hover{
+    background-color: rgb(230, 230, 147);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    width: max-content;
+}
+.user-input{
+    padding: 10px;
+    
+    margin-bottom: 10px;
+    
+}
+
+.card-foot{
+    display: flex;
+    justify-content: space-between;
+}
+.unPinnedNotes{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 10px; /* Gap between the notes */
+}
+.pinnedNotes{
+    width: 50%;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 20px; /* Gap between the notes */
+}
+.unpin-banner,.pin-banner{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+.note{
+    width: max-content;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.notesPopup{
+    display: none;
+}
